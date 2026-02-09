@@ -1,0 +1,142 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  min-height: 600px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.map-section {
+  position: sticky;
+  top: 2rem;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.location-btn {
+  background-color: #10ac84;
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(16, 172, 132, 0.2);
+}
+
+.location-btn:hover {
+  background-color: #0e9770;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(16, 172, 132, 0.3);
+}
+
+.info-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  color: #2d3436;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f2f6;
+  color: #636e72;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.info-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.info-card li:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  background-color: #2d3436;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-section {
+    position: relative;
+    top: 0;
+    height: 400px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}
