@@ -1,0 +1,13 @@
+{
+  "name": "dhaka-bus-backend-test",
+  "version": "1.0.0",
+  "description": "Test backend for Dhaka Bus Service (no database required)",
+  "main": "test-server.js",
+  "scripts": {
+    "start": "node test-server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.1"
+  }
+}

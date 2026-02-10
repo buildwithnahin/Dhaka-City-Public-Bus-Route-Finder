@@ -1,0 +1,63 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.stop-popup {
+  min-width: 150px;
+}
+
+.stop-popup strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
+  font-size: 1rem;
+}
+
+.stop-popup p {
+  margin: 0.25rem 0;
+  color: #636e72;
+  font-size: 0.9rem;
+}
+
+.stop-popup .distance {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #10ac84;
+}
+
+/* Override Leaflet default styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  padding: 0;
+}
+
+.leaflet-popup-content {
+  margin: 1rem;
+}

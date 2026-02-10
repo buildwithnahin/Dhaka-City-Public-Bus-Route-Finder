@@ -1,0 +1,316 @@
+.route-results {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.route-results h2 {
+  color: #2d3436;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.route-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: #636e72;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f2f6;
+}
+
+.route-card {
+  background-color: #f8f9fa;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.route-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.route-card.selected {
+  border-color: #667eea;
+  background-color: #f0f2ff;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.route-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bus-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bus-badge.small {
+  padding: 0.375rem 0.875rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.route-type-badge {
+  padding: 0.375rem 0.875rem;
+  background-color: #10ac84;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.transfer-badge {
+  background-color: #f39c12;
+}
+
+.route-path {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.stop {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.arrow {
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.route-details {
+  display: flex;
+  gap: 2rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail .label {
+  font-size: 0.85rem;
+  color: #636e72;
+}
+
+.detail .value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+/* Transfer Route Styles */
+.route-card.transfer {
+  background-color: #fffbf0;
+  border-color: #f39c12;
+}
+
+.route-card.transfer:hover,
+.route-card.transfer.selected {
+  border-color: #f39c12;
+  background-color: #fff8e6;
+  box-shadow: 0 4px 12px rgba(243, 156, 18, 0.2);
+}
+
+.leg {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid #e1e8ed;
+}
+
+.leg-number {
+  font-size: 0.75rem;
+  color: #636e72;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.leg-details {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #636e72;
+  font-weight: 600;
+}
+
+.transfer-info {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background-color: #fff3cd;
+  border-left: 3px solid #f39c12;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #856404;
+  font-weight: 600;
+}
+
+.route-summary {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #e1e8ed;
+  display: flex;
+  justify-content: space-around;
+}
+
+.summary-item {
+  text-align: center;
+  color: #2d3436;
+}
+
+.summary-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  color: #636e72;
+}
+
+.no-results {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #636e72;
+  font-size: 1.1rem;
+}
+
+/* Route Stops Section */
+.route-stops-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #e1e8ed;
+}
+
+.show-stops-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.show-stops-btn:hover {
+  background-color: #5568d3;
+  transform: translateY(-1px);
+}
+
+.route-stops-list {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e1e8ed;
+}
+
+.stops-header {
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.stop-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.stop-item:hover {
+  background-color: #f8f9fa;
+}
+
+.stop-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #667eea;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stop-name {
+  flex: 1;
+  color: #2d3436;
+  font-size: 0.9rem;
+}
+
+.stop-badge {
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.stop-badge.start {
+  background-color: #10ac84;
+  color: white;
+}
+
+.stop-badge.end {
+  background-color: #ee5a6f;
+  color: white;
+}
+
+.stop-badge.transfer {
+  background-color: #f39c12;
+  color: white;
+}
+
+.leg-stops {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #e1e8ed;
+}
+
+.leg-stops:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
